@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import CounterButton from '../counter-button/CounterButton';
 import './Counter.css';
 
