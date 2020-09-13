@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ToDoDataService from '../../api/todo/TodoDataService.js';
+// import ToDoDataService from '../../api/todo/TodoDataService.js';
 import TodoDataService from '../../api/todo/TodoDataService.js';
 import AuthenticationService from './AuthenticationService.js';
 
@@ -43,14 +43,6 @@ class ToDosComponent extends Component {
     updateTodoClicked(id) {
         console.log('update' + id);
         this.props.history.push(`/todos/${id}`)
-        // let username = AuthenticationService.getLoggedInUserName()
-        // TodoDataService.deleteTodo(username, id)
-        //     .then (
-        //         response => {
-        //             this.setState({message: `Delete of Todo ${id} Successful`})
-        //             this.refreshTodos()
-        //         }
-        //     )
     }
 
     render() {
